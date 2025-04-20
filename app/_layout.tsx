@@ -8,5 +8,14 @@ export default function RootLayout() {
     'Outfit-Bold': require('../assets/fonts/Outfit-Bold.ttf'),
 
   });
-  return <Stack />;
+  return(
+    <Stack>
+      <Stack.Screen name="Landing"
+        options={{
+          headerShown:false
+        }} />
+    </Stack>
+  )
+
+  
 }
