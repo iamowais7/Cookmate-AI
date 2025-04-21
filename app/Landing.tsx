@@ -1,10 +1,14 @@
 import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native'
-import React from 'react'
+import React from 'react';
 import {Marquee} from '@animatereactnative/marquee'
-import {gestureHandlerRootHOC, GestureHandlerRootView} from 'react-native-gesture-handler'
+import { GestureHandlerRootView} from 'react-native-gesture-handler'
 import Colors from '@/services/Colors'
 
+
+
+
 export default function Landing() {
+  
     const imageList = [
         require('./../assets/images/1.jpg'),
         require('./../assets/images/c1.jpg'),
@@ -74,7 +78,7 @@ export default function Landing() {
         </Text>
 
         <TouchableOpacity
-        onPress={()=>console.log("Button-Clicked")}
+         
          style={styles.button}>
           <Text style={{textAlign:'center',
                        color:Colors.WHITE,
